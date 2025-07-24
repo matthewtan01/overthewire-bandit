@@ -1,0 +1,11 @@
+How to view hidden files using 'ls' command
+
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+
+ls -la
+-l for long listing format (detailed info like permissions, owner, etc)
+-a for all files (including hidden files such as .git, etc)
+
+cat ...Hiding-From-You
+
+password for next level: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
