@@ -1,3 +1,5 @@
+How to use 'cat' commands for file with <space> in its name
+
 ssh bandit2@bandit.labs.overthewire.org -p 2220
 
 cat spaces\ in\ this\ filename
