@@ -1,0 +1,6 @@
+find / -type f -size 33c -user bandit7 -group bandit6 2>/dev/null
+
+2>/dev/null represents sending the error stream to /dev/null, where 
+NULL is a special device on Linux which destroys all data that is sent to it
+
+password for next level: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
