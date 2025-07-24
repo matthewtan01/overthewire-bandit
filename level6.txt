@@ -1,0 +1,9 @@
+ls 
+
+cd inhere
+
+ls
+
+find . -type f -size 1033c ! -executable
+
+password for next level: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
