@@ -1,0 +1,12 @@
+How to use the 'file' command
+
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+
+cd inhere
+
+file ./* 
+- returns the type of data found in each file
+
+cat ./-file07
+
+password for next level: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
