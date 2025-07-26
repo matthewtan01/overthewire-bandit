@@ -1,0 +1,10 @@
+sort data.txt | uniq - u
+
+NOTE: 
+1. uniq only detect duplicate lines that are adjacent to each other, which is why we need to sort first
+2. -u flag in uniq will output lines that are not repeated consecutively
+3. Using the pipe '|' operator in Linux, it connects stdout to stdin
+4. sort data.txt will send the sorted lines to stdout
+5. uniq -u reads from stdin and filters only the lines that are unique
+
+password for next level: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
