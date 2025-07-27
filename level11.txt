@@ -1,0 +1,9 @@
+command:
+base64 -d data.txt
+
+stdout:
+The password is dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
+NOTE:
+with -d flag, it is used to decode base64 encoded data back to its original from
+
