@@ -1,0 +1,14 @@
+strings data.txt | grep "=="
+
+OR 
+
+strings data.txt | grep -E "={2,}"
+
+NOTE:  
+strings is used to extract human-readable (printable) characters from binary file
+
+grep with -E allows for extended regex, so without it it will look like:
+strings data.txt | grep "=\\{2,\\}"
+
+
+password for next level: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
