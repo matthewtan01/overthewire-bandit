@@ -5,9 +5,9 @@ diff file1 file2
 
 diff passwords.old passwords.new
 42c42
-< C6XNBdYOkgt5ARXESMKWWOUwBeaIQZ0Y          # LINE in passwords.old
+< C6XNBdYOkgt5ARXESMKWWOUwBeaIQZ0Y          # LINE in passwords.old     # < represents line have been removed
 ---
-> x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO          # LINE IN passwords.new
+> x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO          # LINE IN passwords.new     # > represents line have been added
 
 
 password for next level: x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
