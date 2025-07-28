@@ -1,4 +1,12 @@
 cat data.txt | tr 'a-zA-Z' 'n-za-mN-ZA-M'
 
+NOTE:
+tr SET1 SET2 
+- translates characters in SET1 to corresponding ones in SET2
+- if length of SET2 is less than SET1, it will pad SET2 using the last character to match
+the length of SET1
+
+tr -d SET
+- will delete characters in SET
 
 The password is 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
