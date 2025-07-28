@@ -1,0 +1,4 @@
+nc localhost 30000
+<PASTE_PW>
+
+8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
