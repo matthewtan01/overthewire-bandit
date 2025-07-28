@@ -1,0 +1,8 @@
+ls -> sshkey.private
+
+ssh with the -i flag:
+can be used to specify the identity file, in this case the file containing the private SSH key
+
+ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
+
+cat /etc/bandit_pass/bandit14 -> MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
