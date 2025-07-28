@@ -1,0 +1,23 @@
+xxd file.bin                    (convert binary file to hex)
+xxd -r file.hex > file.bin      (convert hex file to binary)
+
+Learn about file compression tools on Unix/Linux systems. 
+They are gzip and bzip2.
+
+To compress a file:
+gzip file -> file.gz
+bzip2 file -> file.bz2
+
+To decompress a file:
+gzip -d (requires file to have extension .gz)
+bzip2 -d (doesn't require file to have extension.bz2)
+
+tar is a tool used to combine multiple files and directories into a single archive file
+(often called a tarball)
+
+flags used with tar:
+-f -> used to specify the archive file
+-t -> to view whats inside the tarball
+-x -> to extract files from the archive
+
+The password is FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
