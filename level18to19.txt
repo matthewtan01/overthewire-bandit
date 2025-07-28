@@ -1,0 +1,12 @@
+default shell is /bin/bash:
+echo $SHELL -> /bin/bash
+
+what is .bashrc?
+: a configuration file for the bash shell that runs everytime you start a new interactive terminal 
+
+ssh bandit18@bandit.labs.overthewire.org -p 2220 -t /bin/sh
+-t is to force a pseudo-terminal allocation
+
+cat readme
+
+cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
