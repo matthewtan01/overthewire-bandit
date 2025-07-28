@@ -1,0 +1,7 @@
+ncat --ssl localhost 30001
+OR
+openssl s_client -connect localhost:30001
+
+<PASTE_PW>
+
+password for next level: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
