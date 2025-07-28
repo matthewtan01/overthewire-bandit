@@ -1,0 +1,22 @@
+To scan for ports in the range of 31000 to 32000 that are open and have a service listening
+nmap -p 31000-32000 localhost
+
+can add the -sV flag to show which service is running on SSL
+
+Locate the right port by trial and error,
+openssl s_client -connect localhost:31790 -quiet
+(since the key for previous exercise starts with k, need to add the -quiet option, or else KEY UPDATE will appear)
+https://docs.openssl.org/3.0/man1/openssl-s_client/#connected-commands
+
+After getting the RSA KEY,
+TEMPDIR=$(mktemp -d)
+cd $TEMPDIR
+vim rsa.key
+
+chmod 600 rsa.key
+
+ssh -i rsa.key bandit17@localhost -p 2220
+
+cat /etc/bandit_pass/bandit17
+
+password obtained: EReVavePLFHtFlFsjn3hyzMlvSuSAcRD
