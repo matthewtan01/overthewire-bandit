@@ -1,0 +1,13 @@
+diff file1 file2
+- compares the content of file1 and file2 and shows the difference between them
+- it output the changes needed to make file1 file2
+- 42c42 means that line 42 in file1 should be changed to line 42 in file2
+
+diff passwords.old passwords.new
+42c42
+< C6XNBdYOkgt5ARXESMKWWOUwBeaIQZ0Y          # LINE in passwords.old
+---
+> x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO          # LINE IN passwords.new
+
+
+password for next level: x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
