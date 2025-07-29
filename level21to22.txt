@@ -1,0 +1,24 @@
+files in /etc/cron.d/ are existing system-wide cron jobs
+
+cat /etc/cron.d/cronjob_bandit22
+@reboot bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+* * * * * bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+
+First Line:
+@reboot -> Run this command when system start
+bandit22 -> Run as the user bandit22
+/usr/bin/cronjob_bandit22.sh -> The script being executed
+&> /dev/null -> Discard output from stdout and stderr 
+
+Second Line:
+* * * * * -> Run the script every minute, of every hour, of every day, of every month, on every weekday
+
+cat /usr/bin/cronjob_bandit22.sh
+
+#!/bin/bash
+chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv                             #644 correspond to rw-r--r--
+cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+
+password: tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
