@@ -1,0 +1,31 @@
+To see the shell of user bandit 26,
+cat /etc/passwd | grep '^bandit26'
+bandit26:x:11026:11026:bandit level 26:/home/bandit26:/usr/bin/showtext
+
+cat /usr/bin/showtext
+#!/bin/sh
+export TERM=linux
+exec more ~/text.txt
+exit 0
+
+NOTE: 
+exec command in Linux is used to replace the current process with a new process.
+When you run a command normally in the shell, the shell will fork a new process,
+and the command run in that child process. The shell then waits for the child 
+process to complete. With exec, no new process is forked. Instead, the program
+specified after exec directly replaces the shell's process.
+
+NOTE: 
+more command is used to display text bit by bit according to the terminal size
+
+We need to limit the terminal size in order to not get exitted after SSH into bandit26.
+When more is displaying a file, we can launch an editor (vim)
+
+In vim, exit to normal mode using Esc button
+In vim normal mode, we have access to Vim's command interface (:)
+
+:set shell=/bin/bash        # tells vim to use bash when executing external shell commands
+:shell                      # launch an interactive shell 
+
+cat /etc/bandit_pass/bandit26
+s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
