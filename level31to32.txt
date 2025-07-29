@@ -1,0 +1,9 @@
+echo 'May I come in?' > key.txt
+rm .gitignore
+
+git add .
+git commit -m "Added key.txt"
+git push
+
+password for next level:
+3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K
