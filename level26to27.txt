@@ -1,0 +1,9 @@
+repeat the steps in the previous stage to escape the restricted shell
+
+ls -l bandit27-do
+-rwsr-x--- 1 bandit27 bandit26 14884 Jul 28 19:03 bandit27-do
+
+can see that the setuid is set
+
+./bandit27-do cat /etc/bandit_pass/bandit27
+upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
