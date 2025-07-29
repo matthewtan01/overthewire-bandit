@@ -1,0 +1,14 @@
+ls -l (to list the files as well as its permissions)
+-rwsr-x--- 1 bandit20 bandit19 14884 Jul 28 19:03 bandit20-do
+
+take note of the -rwsr-x---, in the owner permissions, there is an s instead of the usual x.
+s in place of x means that the setuid bit is set and the owner has execute permissions.
+this cause the program to run with privileges of the file owner, not the person running it.
+
+only owner (bandit20) and group (bandit19) are able to execute the file
+
+to run the program: ./bandit20-do
+
+./bandit20-do cat /etc/bandit_pass/bandit20
+
+password for next level: 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
