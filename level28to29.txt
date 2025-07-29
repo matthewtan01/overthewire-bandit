@@ -1,0 +1,51 @@
+TEMPDIR=$(mktemp -d)
+cd $TEMPDIR
+
+git clone ssh://bandit28-git@localhost:2220/home/bandit28-git/repo
+
+cd repo
+
+cat README.md
+Some notes for level29 of bandit.
+
+## credentials
+
+- username: bandit29
+- password: xxxxxxxxxx
+
+NOTE: password is censored
+
+git log (to check previous commits)
+commit 494cf8c7bef69317392930b84777b0da35cb1b3f (HEAD -> master, origin/master, origin/HEAD)
+Author: Morla Porla <morla@overthewire.org>
+Date:   Mon Jul 28 19:03:49 2025 +0000
+
+    fix info leak
+
+commit f257900db7c134cb5224c91013817e76d18457e0
+Author: Morla Porla <morla@overthewire.org>
+Date:   Mon Jul 28 19:03:49 2025 +0000
+
+    add missing data
+
+commit 76a999f68286e42e0f98210ec45e66f4d35612b1
+Author: Ben Dover <noone@overthewire.org>
+Date:   Mon Jul 28 19:03:49 2025 +0000
+
+    initial commit of README.md
+
+
+To view the project at that commit, do
+git checkout f257900db7c134cb5224c91013817e76d18457e0
+
+NOTE: This is different from git revert, you are not changing history,
+but just "looking at" that commit's state
+
+cat README.md
+# Bandit Notes
+Some notes for level29 of bandit.
+
+## credentials
+
+- username: bandit29
+- password: 4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7
