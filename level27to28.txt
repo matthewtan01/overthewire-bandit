@@ -1,0 +1,7 @@
+git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
+
+cd repo
+ls
+cat README
+
+The password to the next level is: Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN
