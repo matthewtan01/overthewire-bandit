@@ -1,0 +1,15 @@
+For this challenge, we need to set up a listener on a port such that it will send the password when a connection is established.
+
+echo "message" | nc -l -p <port_no> &
+-l puts nc in listen mode
+-p for port number
+& for running the command in the background
+
+
+echo "0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO" | nc -l -p 1234 &
+./suconnect 1234
+
+Read: 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+Password matches, sending next password
+EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+
