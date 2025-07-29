@@ -1,0 +1,13 @@
+git branch -a 
+(-a flag to list all branches, local and remote)
+
+git checkout remotes/origin/dev
+
+bandit29@bandit:/tmp/tmp.VyHR83NzB4/repo$ cat README.md
+# Bandit Notes
+Some notes for bandit30 of bandit.
+
+## credentials
+
+- username: bandit30
+- password: qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL
