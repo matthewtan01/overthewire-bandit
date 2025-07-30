@@ -3,8 +3,18 @@ after cloning the repo,
 git tag
 : secret
 
-git show secret
+NOTE: what is a git tag?
+- used to mark specific points in Git history as important, usually to 
+indicate a release version
+
+git tag is used to list all tags in the repo
+
+git show <tag_name>
+- display information about a tag
 
 git show secret
 
 password for next level: fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy
+
+
+
